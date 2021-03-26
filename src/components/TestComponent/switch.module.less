@@ -1,0 +1,30 @@
+.ant-switch {
+    height: 17px;
+    background-color: #B5B5B5;
+}
+
+.ant-switch-checked {
+    background-color: #0F213C;
+}
+
+.ant-switch-handle {
+    top: -4px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.ant-switch-checked .ant-switch-handle {
+    left: calc(100% - 18px);
+}
+
+.ant-switch-handle::before {
+    background-color: #919191;
+    border-radius: 12px;
+}
+
+.ant-switch-checked {
+    .ant-switch-handle::before {
+        background-color: #01c8f8;
+    }
+}

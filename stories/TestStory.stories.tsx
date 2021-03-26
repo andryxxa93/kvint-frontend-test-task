@@ -1,9 +1,9 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
-import TestComponent from '../src/components/TestComponent';
+import SwitchComponent from '../src/components/TestComponent';
 
 export default {
-  title: 'Тестовая стори',
+  title: 'UI',
   decorators: [
     withKnobs,
     (storyFn: () => React.ReactNode): React.ReactNode => storyFn(),
@@ -11,10 +11,10 @@ export default {
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const TestTaskStory = () => {
-  return <TestComponent />;
+export const Switch = () => {
+  return <SwitchComponent />;
 };
 
-TestTaskStory.story = {
-  name: 'Тестовая стори',
+Switch.story = {
+  name: 'Switch',
 };
